@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gricel Vázquez - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Source Serif 4', serif;
+        }
+        .section-link.active {
+            color: #2563eb; /* blue-600 */
+            font-weight: 700;
+        }
+    </style>
+</head>
+<!-- font tahoma -->
+<body class="bg-yellow-50 text-gray-800 leading-relaxed">
+
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row md:space-x-12 px-4 md:px-8 py-8 md:py-16">
+
+            <!-- Left Fixed Sidebar -->
+            <aside class="md:w-1/3 md:sticky md:top-0 md:self-start md:h-screen md:overflow-y-auto py-8">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <img src="https://placehold.co/200x200/E2E8F0/4A5568?text=GV" alt="Gricel Vázquez" class="rounded-full shadow-lg w-32 h-32 md:w-40 md:h-40 mb-4">
+                    <h1 class="text-3xl font-bold text-gray-900">Gricel Vázquez</h1>
+                    <p class="text-lg text-gray-600 mt-2">Research Associate in Computer Science</p>
+                    <p class="text-md text-gray-500 mt-1">Institute for Safety Autonomy,</p>
+                    <p class="text-md text-gray-500">University of York</p>
+                    
+
+                    <!-- Navigation -->
+                    <nav class="hidden md:block mt-8 space-y-2">
+                        <a href="#about" class="section-link block text-gray-600 hover:text-blue-600 transition font-semibold">About</a>
+                        <!-- <a href="#news" class="section-link block text-gray-600 hover:text-blue-600 transition font-semibold">News</a> -->
+                        <a href="#research" class="section-link block text-gray-600 hover:text-blue-600 transition font-semibold">Research Interests</a>
+                        <a href="#publications" class="section-link block text-gray-600 hover:text-blue-600 transition font-semibold">Publications</a>
+                        <a href="#experience" class="section-link block text-gray-600 hover:text-blue-600 transition font-semibold">Experience</a>
+                        <a href="#education" class="section-link block text-gray-600 hover:text-blue-600 transition font-semibold">Education</a>
+                    </nav>
+
+                    <!-- Contact & Socials -->
+                    <div class="mt-8">
+                         <p class="text-gray-600  flex items-center justify-center md:justify-start space-x-2">
+                            <i class="fas fa-envelope"></i>
+                            <span>gricel[dot]vazquez [at] york[dot]ac[dot]uk</span>
+                        </p>
+                        <div class="flex space-x-4 mt-4 justify-center md:justify-start">
+                            <!-- Replace # with your actual profile links -->
+                            <a href="https://github.com/Gricel-lee" aria-label="GitHub" class="text-gray-500 hover:text-blue-600 transition"><i class="fab fa-github fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/gricel-v-3a6665162" aria-label="s" class="text-gray-500 hover:text-blue-600 transition"><i class="fab fa-linkedin fa-lg"></i></a>
+                            <a href="https://dblp.org/pid/305/3970.html" aria-label="DBLP" class="text-gray-500 hover:text-blue-600 transition font-bold">DBLP</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Scrollable Content -->
+            <main class="md:w-2/3 mt-12 md:mt-0">
+                
+                <!-- About Section -->
+                <section id="about" class="mb-16">
+                    <p class="text-lg text-gray-700 mb-4">I am an early career researcher at the Institute for Safety Autonomy at the University of York. I work in the modelling of probabilistic systems, requirements engineering, development of verification frameworks using formal methods, multi-objective optimisation, and self-adaptive systems.
+                        My research is driven by the application of probabilistic model checking, a technique that allows the formal verification of systems exhibiting stochastic behaviour, modelling different sources of uncertainty, such as aleatory uncertainty from multiple existing AI components.
+                        <br>
+                        <strong>Long-term Vision:</strong> My long-term research vision is to develop trustworthy autonomous systems that can operate safely and effectively in complex, dynamic environments, while considering the safety implications of their deployment and deployment.
+                        <br>
+                        
+                    </p>
+                    <p class="text-lg text-gray-700">I have a PhD from the University of York, UK. My thesis focused on the formal verification of multi-robot probabilistic systems.</p>
+                </section>
+
+                <!-- News Section
+                <section id="news" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 border-b pb-2">News</h2>
+                    <ul class="space-y-3 list-disc list-inside text-gray-700">
+                        <li><span class="font-semibold">[May 2024]</span> Our paper "Robotics: A New Mission for FRET Requirements" was accepted to the NASA Formal Methods Symposium 2024.</li>
+                        <li><span class="font-semibold">[Oct 2023]</span> Started my position as a Research Associate on the Formal Methods for Resilient Systems (REASON) project at the University of York.</li>
+                        <li><span class="font-semibold">[May 2023]</span> Began an internship with KBR Inc. at the NASA AMES Research Centre.</li>
+                    </ul>
+                </section> -->
+
+                <!-- Research Interests Section -->
+                <section id="research" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 border-b pb-2">Research Interests</h2>
+                    <ul class="space-y-2 list-disc list-inside text-gray-700">
+                        <li>Formal requirements modelling and elicitation, verification of systems.</li>
+                        <li>Model-driven engineering, system parameter optimisation, runtime verification and adaption.</li>
+                        <li>Safety implications of robotic systems, multi-robot systems (MRS).</li>
+                    </ul>
+                </section>
+
+                <!-- Publications Section -->
+                <section id="publications" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 border-b pb-2">Publications</h2>
+                    <div class="space-y-6">
+                        <div class="publication-item">
+                            <div class="publication-item">
+                                <p class="text-gray-800">
+                                    Gricel Vázquez, Alexandros Evangelidis, Sepeedeh Shahbeigi, Simos Gerasimou.<br>
+                                    <strong>Adaptive Human-Robot Collaborative Missions using Hybrid Task Planning.</strong><br>
+                                    SEAMS@ICSE 2025: 73-84
+                                </p>
+                                <div class="space-x-4 text-sm mt-1">
+                                    <a href="https://ieeexplore.ieee.org/document/11025899" class="text-blue-600 hover:underline">[IEEE]</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                                <p class="text-gray-800">
+                                    Radu Calinescu, Sinem Getir Yaman, Simos Gerasimou, Gricel Vázquez, Micah Bassett.<br>
+                                    <strong>Verification and External Parameter Inference for Stochastic World Models.</strong><br>
+                                    CoRR abs/2503.16034 (2025)
+                                </p>
+                                <div class="space-x-4 text-sm mt-1">
+                                    <a href="https://dblp.org/rec/journals/corr/abs-2503-16034.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Alexandros Evangelidis, Gricel Vázquez, Simos Gerasimou.<br>
+                                <strong>Efficient Strategy Synthesis for MDPs via Hierarchical Block Decomposition.</strong><br>
+                                CoRR abs/2506.17792 (2025)
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/journals/corr/abs-2506-17792.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Yasmin Rafiq, Gricel Vázquez, Radu Calinescu, Sanja Dogramadzi, Robert M. Hierons.<br>
+                                <strong>Symbolic Runtime Verification and Adaptive Decision-Making for Robot-Assisted Dressing.</strong><br>
+                                Proceedings of the 51st Euromicro Conference on Software Engineering and Advanced Applications (SEAA), 2025.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/journals/corr/abs-2504-15666.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Nawshin Mannan Proma, Gricel Vázquez, Sepeedeh Shahbeigi, Arjun Badyal, Victoria J. Hodge.<br>
+                                <strong>Probabilistic Safety Verification for an Autonomous Ground Vehicle: A Situation Coverage Grid Approach.</strong><br>
+                                IEEE International Conference on Vehicular Electronics and Safety (ICVES), 2025.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/journals/corr/abs-2507-12158.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Gricel Vázquez, Anastasia Mavridou, Matthew Farrell, Tullio Pressburger, Radu Calinescu.<br>
+                                <strong>Robotics: A New Mission for FRET Requirements.</strong><br>
+                                NASA Formal Methods Symposium (NFM), 2024.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/conf/nfm/VazquezMFPC24.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Radu Calinescu, Calum Imrie, Ravi Mangal, Genaína Nunes Rodrigues, Corina S. Pasareanu, Misael Alpizar Santana, Gricel Vázquez.<br>
+                                <strong>Controller Synthesis for Autonomous Systems With Deep-Learning Perception Components.</strong><br>
+                                IEEE Transactions on Software Engineering (TSE), 2024.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/journals/tse/CalinescuIMRPSV24.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Radu Calinescu, Calum Imrie, Ravi Mangal, Corina S. Pasareanu, Misael Alpizar Santana, Gricel Vázquez.<br>
+                                <strong>Discrete-Event Controller Synthesis for Autonomous Systems with Deep-Learning Perception Components.</strong><br>
+                                IEEE Transactions on Software Engineering (TSE), 2022.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/journals/corr/abs-2202-03360.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Carlo Menghi, Gricel Vázquez, Radu Calinescu, Alessandra Russo, J. Cámara.<br>
+                                <strong>Mission Specification Patterns for Mobile Robots: Providing Support for Quantitative Properties.</strong><br>
+                                IEEE Transactions on Software Engineering (TSE), 2022.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/journals/tse/MenghiVCRC22.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Gricel Vázquez Flores, Radu Calinescu, Javier Cámara.<br>
+                                <strong>Scheduling of Missions with Constrained Tasks for Heterogeneous Robot Systems.</strong><br>
+                                In: Formal Methods for Autonomous Systems (FMAS), 2022.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/conf/fmas/VazquezFC22.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Gricel Vázquez, Radu Calinescu, Javier Cámara.<br>
+                                <strong>Scheduling Multi-robot Missions with Joint Tasks and Heterogeneous Robot Teams.</strong><br>
+                                In: Towards Autonomous Robotic Systems (TAROS), 2021: 354-359.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/conf/taros/VazquezCC21.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Gricel Vázquez, Radu Calinescu, Javier Cámara.<br>
+                                <strong>Formal Verification of Multi-Robot Missions with Joint Tasks.</strong><br>
+                                In: NASA Formal Methods Symposium (NFM), 2021.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/conf/nfm/VazquezCC21.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <p class="text-gray-800">
+                                Gricel Vázquez, Radu Calinescu, Javier Cámara.<br>
+                                <strong>Automated Scheduling of Multi-Robot System Missions: An Architectural Perspective (short paper).</strong><br>
+                                In: European Conference on Software Architecture (ECSA) Companion, 2021.
+                            </p>
+                            <div class="space-x-4 text-sm mt-1">
+                                <a href="https://dblp.org/rec/conf/ecsa/VazquezCC21.html?view=bibtex" class="text-blue-600 hover:underline">[DBLP]</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section id="experience" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 border-b pb-2">Experience</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-bold">
+                                Research Associate, Europe Horizon Project 
+                                <a href="https://ai4work.eu/" class="text-blue-600 hover:underline" target="_blank" rel="noopener">
+                                    AI4Work
+                                </a>, University of York
+                            </h3>
+                            <p class="text-sm text-gray-600">Sep 2024 - Present</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold"> Research Associate, 
+                                <a href="https://gtr.ukri.org/projects?ref=EP%2FV026747%2F1" class="text-blue-600 hover:underline" target="_blank" rel="noopener">
+                                    UKRI Trustworthy Autonomous Systems Node in Resilience
+                                </a>
+                                , University of York
+                            </h3></h3>
+                            <p class="text-sm text-gray-600">Oct 2023 - Sep 2024</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Intern, KBR Inc. at NASA AMES, USA, research group on Robust Software Engineering</h3>
+                            <p class="text-sm text-gray-600">May 2023 - Aug 2023</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Research Trainee, University of York</h3>
+                            <p class="text-sm text-gray-600">Sept 2021 - Mar 2022</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Postgraduate Teaching Assistant, University of York</h3>
+                            <p class="text-sm text-gray-600">Oct 2019 - Dec 2020</p>
+                        </div>
+                    </div>
+                </section>
+
+                 <!-- Education Section -->
+                <section id="education" class="mb-16">
+                    <h2 class="text-3xl font-bold mb-6 border-b pb-2">Education</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-bold">PhD in Computer Science</h3>
+                            <p class="text-sm text-gray-600">University of York, UK, 2019 - Present</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">MSc in Computational Intelligence & Robotics (Distinction)</h3>
+                            <p class="text-sm text-gray-600">University of Sheffield, UK, 2016 - 2017</p>
+                        </div>
+                         <div>
+                            <h3 class="text-lg font-bold">BEng in Mechatronics</h3>
+                            <p class="text-sm text-gray-600">Technological Institute of Queretaro, Mexico, 2010 - 2015</p>
+                        </div>
+                    </div>
+                </section>
+                
+                 <!-- Footer -->
+                <footer class="text-center text-gray-500 text-sm py-8">
+                     <p>&copy; 2025 Gricel Vázquez. All Rights Reserved.</p>
+                </footer>
+
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Active link highlighting on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.section-link');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+    </script>
+</body>
+</html>
